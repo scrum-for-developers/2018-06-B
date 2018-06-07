@@ -24,6 +24,7 @@ public class BookDataFormData {
 
 	@NotEmpty(message = "{empty.bookDataFormData.isbn}")
 	@ISBN(message = "{notvalid.bookDataFormData.isbn}")
+	@Length(message = "{invalid.length.bookDataFormData.isbn}", min = 10, max = 10)
 	private String isbn;
 
 	@NotEmpty(message = "{empty.bookDataFormData.author}")
