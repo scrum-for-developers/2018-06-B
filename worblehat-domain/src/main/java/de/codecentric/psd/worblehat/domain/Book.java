@@ -19,6 +19,7 @@ public class Book implements Serializable {
 	private long id;
 
 	private String title;
+	private String description;
 	private String author;
 	private String edition;
 
@@ -51,16 +52,26 @@ public class Book implements Serializable {
 	 *            the yearOfPublication
 	 */
 	public Book(@Nonnull String title,
+			    @Nonnull String description,
 				@Nonnull String author,
 				@Nonnull String edition,
 				@Nonnull String isbn,
 				int yearOfPublication) {
 		super();
 		this.title = title;
+		this.description = description;
 		this.author = author;
 		this.edition = edition;
 		this.isbn = isbn;
 		this.yearOfPublication = yearOfPublication;
+	}
+
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
 	}
 
 	public String getTitle() {
@@ -121,6 +132,7 @@ public class Book implements Serializable {
 	public String toString() {
 		return "Book{" +
 				"title='" + title + '\'' +
+				"description='" + description + '\'' +
 				", author='" + author + '\'' +
 				", edition='" + edition + '\'' +
 				", isbn='" + isbn + '\'' +
