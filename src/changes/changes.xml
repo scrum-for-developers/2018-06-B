@@ -24,7 +24,7 @@
 				Return all borrowed books by one member.
 			</action>
 		</release>
-		<release version="1.2" date="2018-06-07"
+		<release version="1.2.1" date="2018-06-07"
 			description="Release with optimized errorhandling">
 			<action dev="RosaPonyfarm" type="update">
 				Added plaintext errors and validators for users.
