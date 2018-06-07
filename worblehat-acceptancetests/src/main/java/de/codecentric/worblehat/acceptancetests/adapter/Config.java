@@ -14,6 +14,7 @@ public class Config {
             .getBundle(BUNDLE_NAME);
 
     public Config() {
+    	//standard constructor not in use
     }
 
     public static String getString(String key) {

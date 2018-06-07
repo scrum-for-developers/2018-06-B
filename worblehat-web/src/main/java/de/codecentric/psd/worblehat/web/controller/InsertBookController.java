@@ -51,7 +51,7 @@ public class InsertBookController {
 			if (book.isPresent()) {
 			    LOG.info("new book instance is created: " + book.get());
             } else {
-			    LOG.debug("failed to create new book with: "+bookDataFormData.toString());
+			    LOG.debug("failed to create new book with: " + bookDataFormData.toString());
             }
 			return "redirect:bookList";
 		}

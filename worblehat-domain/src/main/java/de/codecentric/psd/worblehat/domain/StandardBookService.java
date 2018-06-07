@@ -17,7 +17,7 @@ import java.util.Set;
 public class StandardBookService implements BookService {
 
 	public StandardBookService() {
-
+		//standard constructor not in use
 	}
 
 	@Autowired
