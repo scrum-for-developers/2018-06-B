@@ -19,7 +19,7 @@ public class Worblehat {
 		System.out.println("Enter 'stop' to stop Worblehat.");
 
 		while (true) {
-			if (scan.nextLine().equals("stop")) {
+			if ( new String("stop").equals(scan.nextLine())) {
 				break;
 			}
 		}
